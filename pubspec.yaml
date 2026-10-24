@@ -1,0 +1,58 @@
+name: faka_iaction
+description: "FAKA iAction mobile app (Android and iOS). A client of the FAKA iAction API."
+publish_to: 'none'
+
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.1
+
+# Versions are pinned exactly. Change them deliberately, one at a time, and run
+# `flutter analyze` and `flutter test` after each change.
+dependencies:
+  flutter:
+    sdk: flutter
+  # Routing and deep links (maintained by the Flutter team).
+  go_router: 17.5.0
+  # Tokens are kept in the platform's secure storage (Keychain / Android Keystore).
+  flutter_secure_storage: 11.2.0
+  # HTTP transport. Tests use its MockClient; no network is touched.
+  http: 1.6.0
+  # Opens the payment provider's hosted checkout page (the https address the
+  # API returns in Payment.checkout) in an in-app browser tab: Chrome Custom
+  # Tabs on Android, SFSafariViewController on iOS, falling back to the system
+  # browser. Maintained by the Flutter team. The page runs in the browser, not
+  # in the app: the app cannot read or change it, the payer sees the
+  # provider's address, and no card field or provider SDK is in the app.
+  url_launcher: 6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # The brand logo (ui repository, onboarding/assets/logo-ink.png), for the intro.
+  assets:
+    - assets/brand/logo-ink.png
+
+  # The UI reference's fonts (ui-spec 3.2), SIL Open Font License: assets/fonts/OFL-*.txt.
+  fonts:
+    - family: Figtree
+      fonts:
+        - asset: assets/fonts/Figtree_400Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Figtree_500Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Figtree_600SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Figtree_700Bold.ttf
+          weight: 700
+    - family: BricolageGrotesque
+      fonts:
+        - asset: assets/fonts/BricolageGrotesque_600SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/BricolageGrotesque_700Bold.ttf
+          weight: 700

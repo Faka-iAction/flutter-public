@@ -1,0 +1,65 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Flutter
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# >>> merged from private flutter by tools/sync-public (regenerated on every sync) >>>
+*.jks
+*.keystore
+key.properties
+config/*.local.json
+*.iml
+*.ipr
+*.iws
+*.swp
+.atom/
+.history
+.packages
+.pub-cache/
+.pub/
+coverage/
+*.g.dart.bak
+app.*.symbols
+app.*.map.json
+android/app/debug
+android/app/profile
+android/app/release
+android/.gradle/
+android/captures/
+android/local.properties
+android/gradle/wrapper/gradle-wrapper.jar
+android/gradlew
+android/gradlew.bat
+android/**/GeneratedPluginRegistrant.java
+ios/Flutter/.last_build_id
+ios/Flutter/ephemeral/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Pods/
+ios/.symlinks/
+ios/Runner/GeneratedPluginRegistrant.*
+ios/**/xcuserdata/
+ios/**/DerivedData/
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+# <<< merged <<<
